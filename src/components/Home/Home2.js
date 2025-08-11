@@ -62,17 +62,6 @@ function Home2() {
                 </a>
               </li>
               <li className="social-icons">
-                {/* Remplace si tu as un compte X/Twitter */}
-                <a
-                  href="https://twitter.com/ton-handle"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
                 {/* LinkedIn de ton profil */}
                 <a
                   href="https://www.linkedin.com/in/souleymane-ibrahim-maïga-69b700376/"
@@ -86,7 +75,7 @@ function Home2() {
               <li className="social-icons">
                 {/* Remplace si tu as Instagram */}
                 <a
-                  href="https://www.instagram.com/ton-handle"
+                  href="https://www.instagram.com/souleymane.mg/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
