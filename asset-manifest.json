@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio-2025/static/css/main.d37140ea.css",
+    "main.js": "/portfolio-2025/static/js/main.3911a0b1.js",
+    "static/js/415.4d6acbeb.chunk.js": "/portfolio-2025/static/js/415.4d6acbeb.chunk.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio-2025/static/js/787.1ed0c42c.chunk.js",
+    "static/media/avatar.svg": "/portfolio-2025/static/media/avatar.9b798fdecca0fd426fc9a8e910ce72c5.svg",
+    "static/media/logoSoul.png": "/portfolio-2025/static/media/logoSoul.c124271e7777451300d1.png",
+    "static/media/home-main.svg": "/portfolio-2025/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
+    "static/media/about.png": "/portfolio-2025/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/Souleymane_Maiga_CV.pdf": "/portfolio-2025/static/media/Souleymane_Maiga_CV.f3d6557db0a5a5ba587d.pdf",
+    "static/media/home-bg.jpg": "/portfolio-2025/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/pre.svg": "/portfolio-2025/static/media/pre.4410c5baaa673cc131da.svg",
+    "index.html": "/portfolio-2025/index.html",
+    "main.d37140ea.css.map": "/portfolio-2025/static/css/main.d37140ea.css.map",
+    "main.3911a0b1.js.map": "/portfolio-2025/static/js/main.3911a0b1.js.map",
+    "415.4d6acbeb.chunk.js.map": "/portfolio-2025/static/js/415.4d6acbeb.chunk.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio-2025/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d37140ea.css",
+    "static/js/main.3911a0b1.js"
+  ]
+}
