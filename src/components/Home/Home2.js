@@ -53,7 +53,7 @@ function Home2() {
               <li className="social-icons">
                 {/* Remplace par ton vrai GitHub */}
                 <a
-                  href="https://github.com/ton-github"
+                  href="https://github.com/souleymane-mg"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
