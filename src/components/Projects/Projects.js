@@ -2,6 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import imgYoobu from "../../Assets/Projects/yoobu.png";
+import imgMhkGestion from "../../Assets/Projects/mhkgestion.png";
+
 
 // 🔄 Image placeholder inline (aucun fichier nécessaire)
 const PLACEHOLDER =
@@ -20,6 +23,18 @@ function Projects() {
         </p>
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          {/* Projets pro et académiques supplémentaires */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={imgMhkGestion}
+              isBlog={false}
+              title="MHK Gestion – Site de gestion de recrutement"
+              description="Plateforme de recrutement permettant la publication d’offres, la réception et le tri des candidatures, le suivi du pipeline (pré-sélection, entretien, décision) et des tableaux de bord pour les recruteurs."
+              demoLink="https://mhk-gestion.com/"
+            />
+          </Col>
+
           {/* Projets GitHub publics */}
           <Col md={4} className="project-card">
             <ProjectCard
@@ -74,7 +89,7 @@ function Projects() {
           {/* Projets pro et académiques supplémentaires */}
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={PLACEHOLDER}
+              imgPath={imgYoobu}
               isBlog={false}
               title="YOOBU – E-commerce WordPress"
               description="Boutique WooCommerce avec optimisation UX mobile, templates personnalisés et intégrations spécifiques."
