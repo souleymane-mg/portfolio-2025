@@ -15,7 +15,7 @@ import pdf from "../../Assets/Souleymane_Maiga_CV.pdf";
 // Worker PDF.js
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-function About() {
+function AboutSection() {
   const [width, setWidth] = useState(typeof window !== "undefined" ? window.innerWidth : 1200);
   const [numPages, setNumPages] = useState(null);
 
@@ -127,4 +127,5 @@ function About() {
   );
 }
 
-export default About;
+export default AboutSection;
+

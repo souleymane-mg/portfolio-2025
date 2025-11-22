@@ -2,11 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import Github from "./Github";
-import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
-import Toolstack from "./Toolstack";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -15,7 +11,7 @@ import pdf from "../../Assets/Souleymane_Maiga_CV.pdf";
 // Worker PDF.js
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-function About() {
+function AboutSectionUIUX() {
   const [width, setWidth] = useState(typeof window !== "undefined" ? window.innerWidth : 1200);
   const [numPages, setNumPages] = useState(null);
 
@@ -47,7 +43,23 @@ function About() {
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               À propos de <strong className="purple">MOI</strong>
             </h1>
-            <Aboutcard />
+            <p className="home-about-body" style={{ color: "white", fontSize: "1.2em", textAlign: "justify" }}>
+              En tant que <b className="purple">UI/UX Designer</b>, je crée des expériences 
+              utilisateur intuitives et esthétiques. Mon approche combine design thinking, 
+              recherche utilisateur et prototypage pour transformer des idées en interfaces 
+              fonctionnelles et agréables.
+              <br />
+              <br />
+              J'utilise <b className="purple">Figma</b> pour le design et le prototypage, 
+              avec une attention particulière à l'accessibilité et à la responsivité. 
+              Je conçois des interfaces qui allient esthétique moderne et facilité d'utilisation, 
+              en pensant toujours à l'expérience utilisateur finale.
+              <br />
+              <br />
+              Mon objectif est de créer des designs qui non seulement plaisent visuellement 
+              mais qui résolvent également les problèmes réels des utilisateurs, en créant 
+              des parcours fluides et engageants.
+            </p>
           </Col>
           <Col
             md={5}
@@ -57,18 +69,6 @@ function About() {
             <img src={laptopImg} alt="À propos" className="img-fluid" />
           </Col>
         </Row>
-
-        <h1 className="project-heading">
-          <strong className="purple">Compétences</strong> techniques
-        </h1>
-        <Techstack />
-
-        <h1 className="project-heading">
-          <strong className="purple">Outils</strong> que j'utilise
-        </h1>
-        <Toolstack />
-
-        <Github />
 
         {/* Section CV */}
         <h1 className="project-heading" style={{ marginTop: "80px" }}>
@@ -127,4 +127,5 @@ function About() {
   );
 }
 
-export default About;
+export default AboutSectionUIUX;
+

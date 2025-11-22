@@ -2,11 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import Github from "./Github";
-import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
-import Toolstack from "./Toolstack";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -15,7 +11,7 @@ import pdf from "../../Assets/Souleymane_Maiga_CV.pdf";
 // Worker PDF.js
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-function About() {
+function AboutSectionData() {
   const [width, setWidth] = useState(typeof window !== "undefined" ? window.innerWidth : 1200);
   const [numPages, setNumPages] = useState(null);
 
@@ -47,7 +43,23 @@ function About() {
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               À propos de <strong className="purple">MOI</strong>
             </h1>
-            <Aboutcard />
+            <p className="home-about-body" style={{ color: "white", fontSize: "1.2em", textAlign: "justify" }}>
+              En tant que <b className="purple">Data Scientist</b>, je transforme les données 
+              en insights actionnables. Mon Master en Data Science m'a permis de maîtriser 
+              l'analyse de données, le machine learning et la visualisation pour résoudre 
+              des problèmes complexes.
+              <br />
+              <br />
+              Je travaille avec <b className="purple">Python</b>, <b className="purple">SQL</b>, 
+              et les bibliothèques de <b className="purple">Machine Learning</b> (Scikit-learn, 
+              TensorFlow/PyTorch). J'ai également de l'expérience avec <b className="purple">Elasticsearch</b> 
+              pour la recherche de documents et la création de pipelines Big Data avec 
+              <b className="purple"> Kafka, Spark</b> et <b className="purple">MongoDB</b>.
+              <br />
+              <br />
+              Mon approche combine analyse statistique rigoureuse, modélisation prédictive 
+              et visualisation de données pour aider à la prise de décision basée sur les données.
+            </p>
           </Col>
           <Col
             md={5}
@@ -57,18 +69,6 @@ function About() {
             <img src={laptopImg} alt="À propos" className="img-fluid" />
           </Col>
         </Row>
-
-        <h1 className="project-heading">
-          <strong className="purple">Compétences</strong> techniques
-        </h1>
-        <Techstack />
-
-        <h1 className="project-heading">
-          <strong className="purple">Outils</strong> que j'utilise
-        </h1>
-        <Toolstack />
-
-        <Github />
 
         {/* Section CV */}
         <h1 className="project-heading" style={{ marginTop: "80px" }}>
@@ -127,4 +127,5 @@ function About() {
   );
 }
 
-export default About;
+export default AboutSectionData;
+
