@@ -9,13 +9,12 @@ import Home2Data from "./Home/Home2Data";
 import TypeDeveloper from "./Home/TypeDeveloper";
 import TypeUIUX from "./Home/TypeUIUX";
 import TypeData from "./Home/TypeData";
-import AboutSection from "./About/AboutSection";
-import AboutSectionUIUX from "./About/AboutSectionUIUX";
-import AboutSectionData from "./About/AboutSectionData";
+import AboutSticky from "./About/AboutSticky";
 import ProjectsSection from "./Projects/ProjectsSection";
 import ProjectsSectionUIUX from "./Projects/ProjectsSectionUIUX";
 import ProjectsSectionData from "./Projects/ProjectsSectionData";
 import Footer from "./Footer";
+import Collaboration from "./Collaboration";
 import { SpecialityContext } from "../App";
 
 function SinglePage() {
@@ -64,16 +63,7 @@ function SinglePage() {
     }
   };
 
-  const renderAboutSection = () => {
-    switch (activeSpeciality) {
-      case "uiux":
-        return <AboutSectionUIUX />;
-      case "data":
-        return <AboutSectionData />;
-      default:
-        return <AboutSection />;
-    }
-  };
+
 
   const renderProjectsSection = () => {
     switch (activeSpeciality) {
@@ -88,11 +78,11 @@ function SinglePage() {
 
   return (
     <div className={`single-page theme-${activeSpeciality}`}>
+      <SpecialitySelector />
       {/* Section Home */}
       <section id="home">
         <Container fluid className="home-section">
           <Particle />
-          <SpecialitySelector />
           <Container className="home-content">
             <Row>
               <Col md={7} className="home-header">
@@ -129,7 +119,12 @@ function SinglePage() {
 
       {/* Section About */}
       <section id="about">
-        {renderAboutSection()}
+        <AboutSticky />
+      </section>
+
+      {/* Section Collaboration */}
+      <section id="collaboration">
+        <Collaboration />
       </section>
 
       {/* Section Projects */}
@@ -144,4 +139,3 @@ function SinglePage() {
 }
 
 export default SinglePage;
-

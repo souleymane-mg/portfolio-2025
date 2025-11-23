@@ -2,10 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import imgYoobu from "../../Assets/Projects/yoobu.png";
-
-const PLACEHOLDER =
-  "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'><rect width='100%' height='100%' fill='%23222'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23bbbbbb' font-family='Arial' font-size='28'>Image%20%C3%A0%20venir</text></svg>";
+import imgMedicali from "../../Assets/Projects/maquette-projet1.png";
 
 function ProjectsSectionUIUX() {
   return (
@@ -16,36 +13,17 @@ function ProjectsSectionUIUX() {
           Mes <strong className="purple">Projets UI/UX</strong>
         </h1>
         <p style={{ color: "white" }}>
-          Voici une sélection de projets UI/UX que j'ai réalisés, mettant en avant le design d'interfaces et l'expérience utilisateur.
+          Voici une sélection de maquettes et prototypes que j'ai réalisés, mettant en avant le design d'interfaces et l'expérience utilisateur.
         </p>
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={imgYoobu}
+              imgPath={imgMedicali}
               isBlog={false}
-              title="YOOBU – E-commerce WordPress"
-              description="Boutique WooCommerce avec optimisation UX mobile, templates personnalisés et intégrations spécifiques. Focus sur l'expérience utilisateur et le design responsive."
-              demoLink="https://yoobu.shop"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={PLACEHOLDER}
-              isBlog={false}
-              title="MHK Gestion – Interface de recrutement"
-              description="Design d'interface pour plateforme de recrutement avec focus sur l'UX pour les recruteurs et candidats. Interface intuitive et moderne."
-              demoLink="https://mhk-gestion.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={PLACEHOLDER}
-              isBlog={false}
-              title="Design System & Prototypes Figma"
-              description="Création d'un design system complet avec composants réutilisables, guidelines et prototypes interactifs pour applications web."
+              title="Medicali – Application médicale"
+              description="Maquette Figma complète d'une application de santé permettant la prise de rendez-vous en ligne avec des professionnels de santé, la recherche de médicaments, et la gestion du dossier médical personnel. Design moderne et intuitif avec focus sur l'accessibilité."
+              ghLink="https://www.figma.com/proto/VZe1vqZd4Jr7PQETn4EEJu/MalikouraSant%C3%A9?page-id=0%3A1&node-id=6-7272&viewport=781%2C-639%2C0.24&t=KWYGRr6fljUMIQ4I-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=976%3A5675"
             />
           </Col>
         </Row>
