@@ -138,14 +138,6 @@ function AboutSticky() {
       <Container>
         <Row>
           <Col md={6} className="scroll-content">
-            <div style={{ paddingBottom: "100px" }}>
-              <h1 style={{ fontSize: "2.5em", paddingBottom: "20px" }}>
-                Mes <strong className="purple">Compétences</strong>
-              </h1>
-              <p className="home-about-body">
-                Découvrez mon expertise à travers ces différents domaines.
-              </p>
-            </div>
 
             {content.map((item, index) => (
               <div 

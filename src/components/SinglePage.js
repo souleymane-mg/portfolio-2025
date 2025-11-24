@@ -10,6 +10,7 @@ import TypeDeveloper from "./Home/TypeDeveloper";
 import TypeUIUX from "./Home/TypeUIUX";
 import TypeData from "./Home/TypeData";
 import AboutSticky from "./About/AboutSticky";
+import SkillsIntro from "./About/SkillsIntro";
 import ProjectsSection from "./Projects/ProjectsSection";
 import ProjectsSectionUIUX from "./Projects/ProjectsSectionUIUX";
 import ProjectsSectionData from "./Projects/ProjectsSectionData";
@@ -29,8 +30,8 @@ function SinglePage() {
       root.classList.add("theme-uiux");
       root.classList.remove("theme-data", "theme-developer");
     } else if (activeSpeciality === "data") {
-      root.style.setProperty("--imp-text-color", "#c770f0");
-      root.style.setProperty("--theme-primary", "#c770f0");
+      root.style.setProperty("--imp-text-color", "#3d8bff");
+      root.style.setProperty("--theme-primary", "#3d8bff");
       root.classList.add("theme-data");
       root.classList.remove("theme-uiux", "theme-developer");
     } else {
@@ -119,6 +120,7 @@ function SinglePage() {
 
       {/* Section About */}
       <section id="about">
+        <SkillsIntro />
         <AboutSticky />
       </section>
 

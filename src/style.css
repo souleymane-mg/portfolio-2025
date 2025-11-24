@@ -96,6 +96,87 @@ html.theme-uiux .project-card-view:hover {
   box-shadow: 0 4px 4px 5px rgba(56, 99, 91, 0.561) !important;
 }
 
+/* Thème Data - Bleu */
+html.theme-data {
+  --imp-text-color: #3d8bff;
+  --theme-primary: #3d8bff;
+}
+
+html.theme-data .purple {
+  color: #3d8bff !important;
+}
+
+html.theme-data .main-name {
+  color: #3d8bff !important;
+}
+
+html.theme-data .Typewriter__wrapper {
+  color: #3d8bff !important;
+}
+
+html.theme-data .Typewriter__cursor {
+  color: #3d8bff !important;
+}
+
+html.theme-data .speciality-btn.active {
+  background: rgba(61, 139, 255, 0.3) !important;
+  border-color: rgba(61, 139, 255, 0.5) !important;
+  box-shadow: 0 4px 15px rgba(61, 139, 255, 0.4) !important;
+}
+
+html.theme-data .speciality-btn::before {
+  background: rgba(61, 139, 255, 0.2) !important;
+}
+
+html.theme-data .speciality-btn.active::before {
+  background: rgba(61, 139, 255, 0.3) !important;
+}
+
+html.theme-data .navbar-menu-btn::before {
+  background: rgba(61, 139, 255, 0.2) !important;
+}
+
+html.theme-data .mobile-menu-item:hover {
+  background: rgba(61, 139, 255, 0.2) !important;
+  border-color: rgba(61, 139, 255, 0.4) !important;
+}
+
+html.theme-data .mobile-social-btn:hover {
+  background: rgba(61, 139, 255, 0.2) !important;
+  border-color: rgba(61, 139, 255, 0.4) !important;
+  box-shadow: 0 4px 15px rgba(61, 139, 255, 0.3) !important;
+}
+
+html.theme-data .mobile-menu-section-title {
+  color: rgba(61, 139, 255, 0.9) !important;
+}
+
+html.theme-data .btn-primary {
+  background-color: #3d8bff !important;
+  border-color: #3d8bff !important;
+}
+
+html.theme-data .btn-primary:hover {
+  background-color: #5c9dff !important;
+  border-color: #5c9dff !important;
+}
+
+html.theme-data .tech-icons {
+  border: 1.7px solid rgba(61, 139, 255, 0.637) !important;
+}
+
+html.theme-data .tech-icons:hover {
+  border: 2.2px solid rgba(61, 139, 255, 0.883) !important;
+}
+
+html.theme-data .project-card-view {
+  box-shadow: 0 4px 5px 3px rgba(61, 139, 255, 0.459) !important;
+}
+
+html.theme-data .project-card-view:hover {
+  box-shadow: 0 4px 4px 5px rgba(61, 139, 255, 0.561) !important;
+}
+
 .purple {
   color: var(--imp-text-color) !important;
 }
@@ -194,7 +275,7 @@ button:focus {
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
-  border-radius: 15px !important;
+  border-radius: 50px !important;
   padding: 10px 15px !important;
   cursor: pointer !important;
   transition: all 0.3s ease !important;
@@ -243,7 +324,7 @@ button:focus {
   padding: 10px 20px !important;
   background: transparent !important;
   border: none !important;
-  border-radius: 15px !important;
+  border-radius: 50px !important;
   color: rgba(255, 255, 255, 0.9) !important;
   font-size: 1rem !important;
   font-weight: 500 !important;
@@ -798,7 +879,7 @@ button:focus {
   padding: 10px 20px;
   background: transparent;
   border: none;
-  border-radius: 15px;
+  border-radius: 50px;
   color: rgba(255, 255, 255, 0.8);
   font-size: 1rem;
   font-weight: 500;
@@ -936,21 +1017,27 @@ button:focus {
 }
 
 .home-about-social-links {
+  display: flex !important;
   justify-content: center !important;
+  align-items: center !important;
+  gap: 20px !important;
   padding-top: 15px !important;
-  display: inline-block !important;
   position: relative !important;
   padding-inline-start: 0 !important;
+  padding-left: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
 }
 
 .home-social-icons {
   position: relative !important;
-  display: inline-block !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   width: 40px !important;
   height: 40px !important;
   text-align: center !important;
   font-size: 1.2em !important;
-  line-height: 2em !important;
   background: rgba(255, 255, 255, 0.972) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
@@ -981,10 +1068,48 @@ button:focus {
   text-shadow: 0 0 2px #87209e;
 }
 
+/* Thème UI/UX - Icônes sociales vertes */
+html.theme-uiux .home-social-icons::before {
+  background: #38635b !important;
+}
+
+html.theme-uiux .home-social-icons:hover::before {
+  box-shadow: 0 0 15px #4a7d73 !important;
+}
+
+html.theme-uiux .home-social-icons {
+  color: #38635b !important;
+}
+
+html.theme-uiux .home-social-icons:hover {
+  color: #4a7d73 !important;
+  box-shadow: 0 0 5px #4a7d73 !important;
+  text-shadow: 0 0 2px #4a7d73 !important;
+}
+
+/* Thème Data - Icônes sociales bleues */
+html.theme-data .home-social-icons::before {
+  background: #3d8bff !important;
+}
+
+html.theme-data .home-social-icons:hover::before {
+  box-shadow: 0 0 15px #5c9dff !important;
+}
+
+html.theme-data .home-social-icons {
+  color: #3d8bff !important;
+}
+
+html.theme-data .home-social-icons:hover {
+  color: #5c9dff !important;
+  box-shadow: 0 0 5px #5c9dff !important;
+  text-shadow: 0 0 2px #5c9dff !important;
+}
+
 .social-icons {
   display: inline-block !important;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
 }
 
 .icon-colour {
@@ -1103,6 +1228,13 @@ button:focus {
   border-radius: 10px !important;
 }
 
+@media (max-width: 767px) {
+  .card-img-top {
+    padding: 10px !important;
+    opacity: 1 !important;
+  }
+}
+
 .blog-img {
   padding: 0px !important;
   opacity: 0.8 !important;
@@ -1113,6 +1245,7 @@ button:focus {
   color: #fff !important;
   background-color: #623686 !important;
   border-color: #623686 !important;
+  border-radius: 50px !important;
 }
 
 .btn-primary:hover {
@@ -1123,6 +1256,10 @@ button:focus {
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
+}
+
+.btn {
+  border-radius: 50px !important;
 }
 .project-heading {
   color: white !important;
@@ -1288,7 +1425,7 @@ button:focus {
   background-color: #934cce5e !important;
   border-color: #934cce5e !important;
   padding: 0.25rem 0.98rem !important;
-  border-radius: 5px !important;
+  border-radius: 50px !important;
   line-height: 1.4 !important;
   transition: 0.3s ease !important;
 }
@@ -1708,3 +1845,116 @@ h2,
 .sticky-visual-item.active {
   pointer-events: auto;
 }
+
+/* --------- */
+/* Skills Intro Section with Floating Icons Row */
+/* --------- */
+
+.skills-intro-section {
+  position: relative;
+  padding: 100px 0 60px;
+  background: transparent;
+  width: 100%;
+  overflow: hidden;
+}
+
+.skills-intro-content {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.skills-intro-content h1 {
+  font-size: 2.8em;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.skills-intro-text {
+  font-size: 1.3em;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Floating Icons Row Animation */
+@keyframes float-bounce {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, var(--float-distance), 0);
+  }
+}
+
+.floating-icons-row {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0 20px;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  gap: 15px;
+  width: 100%;
+  overflow: visible;
+}
+
+.floating-icon-item {
+  flex-shrink: 0;
+  animation: float-bounce var(--float-duration, 5s) ease-in-out infinite;
+  animation-delay: var(--float-delay, 0s);
+}
+
+.icon-bouncer {
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border: 2px solid var(--theme-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  color: var(--theme-primary);
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.floating-icon-item:hover .icon-bouncer {
+  transform: scale(1.15);
+  opacity: 1;
+  border-width: 3px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .skills-intro-section {
+    padding: 80px 0 40px;
+  }
+
+  .skills-intro-content h1 {
+    font-size: 2.2em;
+  }
+
+  .skills-intro-text {
+    font-size: 1.1em;
+  }
+
+  .icon-bouncer {
+    width: 55px;
+    height: 55px;
+    font-size: 1.8em;
+  }
+
+  .floating-icons-row {
+    gap: 8px;
+    margin: 0 -10px;
+    padding: 0 10px;
+    width: calc(100% + 20px);
+  }
+}
+
+
+
+

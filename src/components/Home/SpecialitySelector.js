@@ -40,8 +40,8 @@ function SpecialitySelector({ activeSpeciality, onSpecialityChange }) {
     } else if (onSpecialityChange) {
       onSpecialityChange(specialityId);
     }
-    // Remonter en haut de la page
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    // Remonter en haut de la page - DÉSACTIVÉ pour garder la position de scroll
+    // window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const specialities = [
